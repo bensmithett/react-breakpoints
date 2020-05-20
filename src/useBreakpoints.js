@@ -72,10 +72,8 @@ const useBreakpoints = ({
     }
   }
 
-  useCallback(() => {
-    width = findBreakpoint(widths, entryWidth)
-    height = findBreakpoint(heights, entryHeight)
-  }, [widths, entryWidth, heights, entryHeight])
+  width = findBreakpoint(widths, entryWidth)
+  height = findBreakpoint(heights, entryHeight)
 
   return [width, height];
 };
